@@ -64,6 +64,10 @@ if option == 'Home':
     st.write("RESI-DATA is a real estate analysis service that provides easy-to-grasp analyses of housing data on the county level to help you make the most informed decision on your biggest investment. Whether you are looking to buy a home or invest inproperty, Resi-Data can help you narrow down your search based on previous market trends and high level forecasting.")
     st.write("---")
     st.write("""
+    
+    
+    """)	
+    st.write("""
     This interactive dashboard is designed to visualize real estate data and market trends in the DFW metroplex. It includes data from the following counties: Collin, Dallas, Denton, Ellis, Johnson, Kaufman, Parker, Rockwall, and Tarrant.
     To explore this app, please click on the sidebar to navigate the different pages
     """)
