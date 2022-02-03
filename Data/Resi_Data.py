@@ -19,6 +19,9 @@ from pathlib import Path
 
 st.set_page_config(page_title="Real Estate in the Dallas Fort Worth Metroplex by County", layout="wide")
 
+
+image = Image.open("ReSI-DATA-2.png")
+
 with st.sidebar:
     option = st.selectbox(
         'Please select an option',
@@ -31,7 +34,7 @@ if option == 'Home':
         st.write("---")
 
     with col2:
-	image = Image.open("ReSI-DATA-2.png")
+	
         st.image(image)
         
 
