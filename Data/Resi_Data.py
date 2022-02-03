@@ -43,7 +43,7 @@ if option == 'Home':
 
 
 
-    col1, col2, col3 = st.beta_columns([1,7.5,1])
+    col1, col2, col3 = st.beta_columns([1,10,1])
 
     with col1:
         st.write("---")
