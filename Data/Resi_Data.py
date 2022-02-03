@@ -14,6 +14,8 @@ savefig_options = dict(format="png", bbox_inches="tight")
 plt.style.use('ggplot')
 from neuralprophet import set_random_seed 
 import streamlit.components.v1 as components
+from PIL import Image
+from pathlib import Path
 
 st.set_page_config(page_title="Real Estate in the Dallas Fort Worth Metroplex by County", layout="wide")
 
@@ -29,7 +31,8 @@ if option == 'Home':
         st.write("---")
 
     with col2:
-        st.image("ReSI-DATA-2.png")
+	image = Image.open("ReSI-DATA-2.png")
+        st.image(image)
         
 
     with col3:
