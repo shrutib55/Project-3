@@ -141,7 +141,7 @@ if option == 'Forecast':
 
     @st.cache(allow_output_mutation=True)
     def fetch_data():
-        df = pd.read_csv(URL, infer_datetime_format=True)
+        df = pd.read_csv("dfw_county_market_tracker.csv", infer_datetime_format=True)
         return df
 
     price_forecast = fetch_data()
