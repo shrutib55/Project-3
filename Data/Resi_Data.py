@@ -70,7 +70,8 @@ if option == 'Home':
     st.write("")	
     st.write("""
     This interactive dashboard is designed to visualize real estate data and market trends in the DFW metroplex. It includes data from the following counties: Collin, Dallas, Denton, Ellis, Johnson, Kaufman, Parker, Rockwall, and Tarrant.
-    To explore this app, please click on the sidebar to navigate the different pages
+    
+    To explore this app, please click on the sidebar to navigate the different pages of this app.
     """)
 
 
@@ -99,9 +100,10 @@ st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 
 if option == 'Map':
+    st.write("Please select an option below to view the various maps available.")
     map = st.selectbox(
     'Please select a map to view',
-    ('Select', 'Median Price', 'Average Price', 'Total Listings'))    
+    ('Select', 'Median Price', 'Average Price', 'Total Listings'))
     if map == 'Median Price':
         html_temp = """<div class='tableauPlaceholder' id='viz1643335350730' style='position: relative'><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='RealEstate-DFW&#47;Sheet1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1643335350730');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>"""
         median_price = components.html(html_temp, height = 1000)
@@ -122,6 +124,7 @@ if option == 'Map':
         total_list_map = components.html(html_temp, height = 1000)
 
 if option == 'Graph':
+    st.write("Please select an option below to view the various linear representations of the data available.")
     graph = st.selectbox(
         'Please select a graph to view',
         ('Select', 'Median Price', 'Average Price', 'Percent Change Over Time', 'Sales vs Listings'))    
