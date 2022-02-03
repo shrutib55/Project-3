@@ -139,9 +139,7 @@ if option == 'Graph':
 if option == 'Forecast':
     st.write(
         """
-        If you're interested in investing in a home on the DFW metroplex
-        by using a new model called **Neural Prophet**. This model is a Neural Network based Time-Series Model, built on top of PyTorch and is heavily inspired by Facebook Prophet and AR-Net libraries **([Neural Prophet Site](http://neuralprophet.com/))**.
-        For the Data used in **Neural Prophet**, we're utilizing multiple reliable sources **(e.g., [redfin](https://www.redfin.com/news/data-center/) and [realtor](https://www.realtor.com/research/data/))**, because they have direct access to data from local multiple listing services, as well as insight from their real estate agents across the country.
+       Select a county below to view the house price forecast up to January 2023.
         """)    
 
     st.write('---')   
