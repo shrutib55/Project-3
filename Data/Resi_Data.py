@@ -100,7 +100,7 @@ st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 
 if option == 'Map':
-    st.write("Please select an option below to view the various maps available.")
+    st.write("Please select an option below to view the various geographical representations available.")
     map = st.selectbox(
     'Please select a map to view',
     ('Select', 'Median Price', 'Average Price', 'Total Listings'))
