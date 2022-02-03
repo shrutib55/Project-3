@@ -20,7 +20,7 @@ from pathlib import Path
 st.set_page_config(page_title="Real Estate in the Dallas Fort Worth Metroplex by County", layout="wide")
 
 
-image = "https://github.com/shrutib55/Project-3/blob/c32f9bb2ef4908c7bc40fa90cdca33a820170332/Data/ReSI-DATA-2.png"
+image = Image.open("ReSI-DATA.jpg")
 
 with st.sidebar:
     option = st.selectbox(
